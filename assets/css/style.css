@@ -284,6 +284,9 @@ summary {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
@@ -297,6 +300,18 @@ summary {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .main_page .image img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_page .image img {
+    width: 180px;
+  }
+}
+
 .main_page .text {
   margin: 40px;
 }
@@ -304,13 +319,45 @@ summary {
 .main_page .text h1 {
   text-align: center;
   font-weight: 100;
-  font-size: 42px;
+  font-size: 44px;
+}
+
+.main_page .text h1 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .main_page .text h1 {
+    font-size: calc(20px + 24 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .main_page .text h1 {
+    font-size: 44px;
+  }
 }
 
 .main_page .text h3 {
   text-align: center;
   font-weight: 100;
   font-size: 30px;
+}
+
+.main_page .text h3 {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .main_page .text h3 {
+    font-size: calc(15px + 15 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .main_page .text h3 {
+    font-size: 30px;
+  }
 }
 
 .main_page .text .icon-box {
@@ -355,6 +402,22 @@ summary {
   font-size: 30px;
 }
 
+.main_page .text .icon-box .icon i {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .main_page .text .icon-box .icon i {
+    font-size: calc(18px + 12 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .main_page .text .icon-box .icon i {
+    font-size: 30px;
+  }
+}
+
 .main_page .text .contact-box {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -377,6 +440,22 @@ summary {
   font-size: 20px;
 }
 
+.main_page .text .contact-box i {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .main_page .text .contact-box i {
+    font-size: calc(12px + 8 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .main_page .text .contact-box i {
+    font-size: 20px;
+  }
+}
+
 .main_page .text .contact-box i span {
   font-weight: 100;
   font-family: "Roboto", sans-serif;
@@ -387,6 +466,22 @@ summary {
   color: #9d6261;
   font-size: 20px;
   font-weight: 100;
+}
+
+.main_page .text .contact-box p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .main_page .text .contact-box p {
+    font-size: calc(12px + 8 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .main_page .text .contact-box p {
+    font-size: 20px;
+  }
 }
 
 .main_page a {
